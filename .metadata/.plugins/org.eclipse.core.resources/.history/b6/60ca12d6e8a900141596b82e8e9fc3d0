@@ -1,0 +1,16 @@
+import java.util.HashSet;
+import java.util.Set;
+
+
+public class LargestNonRepetiveSubString {
+	
+	public static void main(String[] args) {
+		
+		Set<Integer> test = new HashSet<Integer>();
+		System.out.println(test.add(12));
+		System.out.println(test.add(13));
+		System.out.println(test.add(12));
+		System.out.println(test);
+	}
+
+}

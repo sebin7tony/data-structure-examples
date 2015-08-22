@@ -1,0 +1,40 @@
+package com.linkedlist.self;
+
+public class Node<T> {
+	
+	private T value;
+	private Node next;
+	
+	//default constructor
+	public Node(){
+		
+		this(null,null);
+	}
+	
+	//constructor with 2 arguments
+	public Node(T value,Node next){
+		
+		this.value = value;
+		this.next = next;
+	}
+	
+	public <T> void setValue(T value2){
+		
+		this.value = value2;
+	}
+	
+	public Integer getValue(){
+		
+		return this.value;
+	}
+	
+	public void setNext(Node next){
+		
+		this.next = next;
+	}
+	
+	public Node getNext(){
+		
+		return this.next;
+	}
+}

@@ -1,0 +1,13 @@
+package com.java.array;
+
+public class LexicoGraphic {
+	
+	public void lexico(int num,StringBuilder value,int length,int target){
+		
+		if(num == length){
+			
+			return;
+		}
+	}
+
+}

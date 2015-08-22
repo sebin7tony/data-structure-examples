@@ -1,0 +1,16 @@
+package com.java.bitMan;
+
+public class PrintAllSubSets {
+	
+	public void printSubSets(int[] input){
+		
+		int len = input.length,temp;
+		int currSubset = 2^len-1;
+		
+		while(currSubset > 0){
+			
+			
+		}
+	}
+
+}

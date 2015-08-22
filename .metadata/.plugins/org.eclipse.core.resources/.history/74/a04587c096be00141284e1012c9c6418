@@ -1,0 +1,38 @@
+package com.sap.test;
+
+public class CollectMoney {
+
+	private int maxSum;
+	private int[][] data ;
+	
+	public void createData(int size, String input){
+		
+		data = new int[size][size];
+		Character temp;
+		int len = input.length();
+		int i=0,start=0;
+		
+		while(i < len){
+			
+			if(input.charAt(i) == '('){
+				start = i;
+			}
+			if(input.charAt(i) == ')'){
+				
+				String row = input.substring(start+1, i-1);
+			}
+		}
+	}
+	
+	public void collectMoneyProblem(String input){
+		
+		createData(4,input);
+	}
+	
+	public static void main(String[] args) {
+		
+		String input = "(1,7,5,2),(5,12,3,6),(100,9,23,16),(16,4,5,9)";
+		CollectMoney cm = new CollectMoney();
+		cm.collectMoneyProblem(input);
+	}
+}

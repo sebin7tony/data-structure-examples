@@ -1,0 +1,12 @@
+package com.ds.tree;
+
+public class Tree {
+	
+	private Node root;
+	
+	public void addNode(int value,){
+		
+		if()
+	}
+
+}

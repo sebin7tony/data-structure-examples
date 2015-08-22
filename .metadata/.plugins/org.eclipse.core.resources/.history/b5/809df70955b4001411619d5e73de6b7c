@@ -1,0 +1,16 @@
+package com.ds.tree;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Queue {
+	
+	private List<Node> queue;
+	private int size;
+	
+	
+	public Queue() {
+		queue = new ArrayList<Node>();
+	}
+
+}

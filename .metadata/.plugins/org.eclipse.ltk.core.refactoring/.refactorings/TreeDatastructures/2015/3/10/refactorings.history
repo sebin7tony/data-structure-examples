@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Queue.java&apos; to &apos;GraphDataStructure/src/com.ds.graph.search&apos;&#x0A;- Original project: &apos;TreeDatastructures&apos;&#x0A;- Destination element: &apos;GraphDataStructure/src/com.ds.graph.search&apos;&#x0A;- Original element: &apos;com.ds.tree.Queue.java&apos;" description="Copy compilation unit" destination="=GraphDataStructure/src&lt;com.ds.graph.search" element1="/src&lt;com.ds.tree{Queue.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1425729475061" units="1" version="1.0"/>
+</session>

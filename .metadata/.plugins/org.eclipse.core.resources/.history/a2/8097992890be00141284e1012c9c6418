@@ -1,0 +1,11 @@
+package com.sap.test;
+
+public class CollectMoney {
+
+	private int maxSum;
+	
+	public void collectMoneyProblem(String input){
+		
+		
+	}
+}

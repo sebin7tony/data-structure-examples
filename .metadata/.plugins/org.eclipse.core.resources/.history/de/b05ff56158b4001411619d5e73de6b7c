@@ -1,0 +1,33 @@
+package com.ds.tree;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Queue {
+	
+	private List<Node> queue;
+	private int size;
+	private int frontPointer;
+	
+	public Queue(int size) {
+		
+		if(size == 0){
+			
+			System.out.println("Queue cannot be made");
+			return;
+		}
+		queue = new ArrayList<Node>();
+		this.size = size;
+		this.frontPointer = 0;
+		this.backPointer = 0;
+	}
+	
+	public void enqueue(Node tmp){
+		
+		if(backPointer <= size){
+			
+			queue.add(tmp);
+		}
+	}
+
+}

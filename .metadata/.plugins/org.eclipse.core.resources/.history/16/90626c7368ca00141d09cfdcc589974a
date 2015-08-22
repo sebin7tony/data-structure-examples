@@ -1,0 +1,13 @@
+package com.hacker.japan;
+
+public class SkippingSum {
+	
+	
+	public static void main(String[] args) {
+		
+		int arrayLength,numOfqueries;
+		
+		
+	}
+
+}

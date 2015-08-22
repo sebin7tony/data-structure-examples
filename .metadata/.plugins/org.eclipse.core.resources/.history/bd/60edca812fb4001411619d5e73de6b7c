@@ -1,0 +1,7 @@
+package com.ds.tree;
+
+public class Tree {
+	
+	private Node root;
+
+}

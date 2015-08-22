@@ -1,0 +1,17 @@
+package com.sap.test;
+
+public class CollectMoney {
+
+	private int maxSum;
+	private int[][] data;
+	
+	public void createData(int size, String input){
+		
+		int len = input.length();
+	}
+	
+	public void collectMoneyProblem(String input){
+		
+		
+	}
+}

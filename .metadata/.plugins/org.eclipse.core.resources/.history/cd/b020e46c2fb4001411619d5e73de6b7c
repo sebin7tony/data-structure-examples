@@ -1,0 +1,10 @@
+package com.ds.tree;
+
+public class Node {
+	
+	private int value;
+	private Node lchild,rchild;
+	
+	
+
+}

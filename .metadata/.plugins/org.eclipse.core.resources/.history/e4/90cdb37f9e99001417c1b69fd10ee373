@@ -1,0 +1,32 @@
+package com.linkedlist.self;
+
+public class LinkedListTests {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("##### Testing for add(integer) #####");
+		LinkedListImpl<String> ll = new LinkedListImpl<String>();
+		ll.add("Sebin");
+		ll.add("jini");
+		ll.add("tony");
+		ll.add("Sabu");
+		ll.add("cet");
+		
+		System.out.println("contents of the linkedList :"+ll);
+		
+		System.out.println("###### Testing for add(pos,int) ######");
+		
+		ll.add(2, "tvm");
+		ll.add(0, "kollam");
+		
+		System.out.println("contents of the linkedList :"+ll);
+		System.out.println(ll.add(12,"test"));
+		
+		System.out.println("##### Testing for remove #####");
+		
+		ll.remove(4);
+		System.out.println("contents of the linkedList :"+ll);
+	}
+
+
+}

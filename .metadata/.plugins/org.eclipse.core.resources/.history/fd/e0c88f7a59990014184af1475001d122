@@ -1,0 +1,15 @@
+package com.linkedlist.util;
+
+import java.util.LinkedList;
+
+public class LinkedListUtil {
+	
+	public static void main(String[] args) {
+		
+		// Java is providing by default linkedList implementation
+		// Lets go through the details
+		
+		LinkedList<String> ll = new LinkedList<String>();
+	}
+
+}

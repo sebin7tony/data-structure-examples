@@ -1,0 +1,27 @@
+package com.linkedlist.self;
+
+public class LinkedListTests {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("##### Testing for add(integer) #####");
+		LinkedListImpl ll = new LinkedListImpl();
+		ll.add(12);
+		ll.add(32);
+		ll.add(54);
+		ll.add(9);
+		ll.add(-9);
+		
+		System.out.println("contents of the linkedList :"+ll);
+		
+		System.out.println("###### Testing for add(pos,int) ######");
+		
+		ll.add(2, 22);
+		ll.add(0, 0);
+		
+		System.out.println("contents of the linkedList :"+ll);
+		System.out.println(ll.add(12,12));
+	}
+
+
+}

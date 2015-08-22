@@ -1,0 +1,38 @@
+package com.ds.tree;
+
+public class PerimeterTree {
+	
+	Tree tree;
+	Queue<Node> queue;
+	
+	public PerimeterTree() {
+		
+		tree = new Tree();
+		
+		/*tree.addNode(20, tree.getRoot());
+		tree.addNode(8, tree.getRoot());
+		tree.addNode(22, tree.getRoot());
+		tree.addNode(25, tree.getRoot());
+		tree.addNode(4, tree.getRoot());
+		tree.addNode(12, tree.getRoot());
+		tree.addNode(10, tree.getRoot());
+		tree.addNode(14, tree.getRoot());*/
+		tree.addNode(50, tree.getRoot());
+		tree.addNode(45, tree.getRoot());
+		tree.addNode(65, tree.getRoot());
+		tree.addNode(99, tree.getRoot());
+		tree.addNode(52, tree.getRoot());
+		tree.addNode(58, tree.getRoot());
+		tree.addNode(31, tree.getRoot());
+		tree.addNode(47, tree.getRoot());
+		tree.addNode(42, tree.getRoot());
+	}
+	
+	public void perimeterNodes(){
+		
+		Node dummy = new Node();
+		
+	}
+	
+
+}

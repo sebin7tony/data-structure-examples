@@ -1,0 +1,53 @@
+package com.sap.test;
+
+public class CollectMoney {
+
+	private int maxSum;
+	private int[][] data;
+	
+	public void createData(int size, String input){
+		
+		Character temp;
+		int len = input.length();
+		int a=0,b=0;
+		
+		for(int i=0;i < len;i++){
+			
+			temp = input.charAt(i);
+			if(Character.isDigit(temp)){
+				
+				if(b < size){
+					
+					data[a][b] = Character.getNumericValue(temp);
+					b++;
+				}
+				else{
+					
+					a++;
+					b = 0;
+				}
+			}
+		}
+		
+		System.out.println("Printing ");
+		for(int[] val : data){
+			
+			for(int va: val){
+				
+				System.out.print(va);
+			}
+		}
+	}
+	
+	public void collectMoneyProblem(String input){
+		
+		createData(4,input);
+	}
+	
+	public static void main(String[] args) {
+		
+		String input = "(1,7,5,2),(5,12,3,6),(100,9,23,16),(16,4,5,9)";
+		CollectMoney cm = new CollectMoney();
+		cm.collectMoneyProblem(input);
+	}
+}

@@ -1,0 +1,11 @@
+package com.linkedlist.self;
+
+public class LinkedListTests {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+
+}

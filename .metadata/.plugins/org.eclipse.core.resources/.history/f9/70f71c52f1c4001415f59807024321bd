@@ -1,0 +1,16 @@
+package com.java.array;
+
+public class MinMax0or1 {
+	
+	private static void printSubset(int[] a)
+    {
+    	
+    }
+	public static void main(String[] args) {
+		
+		int[] k = {2,6,7,9,1,0,1,2,3,6};
+		
+		MinMax0or1.printSubset(k);
+	}
+
+}

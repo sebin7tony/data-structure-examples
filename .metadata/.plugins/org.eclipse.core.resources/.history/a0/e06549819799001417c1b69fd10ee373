@@ -1,0 +1,15 @@
+package com.linkedlist.self;
+
+public class LinkedListTests {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("----Testing for add(integer)");
+		LinkedListImpl ll = new LinkedListImpl();
+		ll.add(12);
+		ll.add(32);
+		System.out.println("contents of the ll :"+ll);
+	}
+
+
+}

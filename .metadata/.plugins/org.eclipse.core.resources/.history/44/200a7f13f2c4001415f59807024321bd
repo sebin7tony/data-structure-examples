@@ -1,0 +1,43 @@
+package com.java.array;
+
+public class MinMax0or1 {
+	
+	private static void printSubset(int[] a)
+    {
+    	int start=0,finalStart=0,length = 0, finallength = 0;
+    	
+    	for(int i=0;i < a.length ; i++){
+    		
+    		if( (a[i] - a[start] >= -1) && (a[i] - a[start] <= 1) ){
+    			
+    			length++;
+    		}
+    		else{
+    			
+    			if(finallength < length){
+    				
+    				finallength = length;
+    				finalStart = start;
+    			}
+    			start = i;
+    			length = 1;
+    		}
+    		
+    	}
+    	
+    	System.out.println("Printing the sequence");
+    	
+    	for(int i = finalStart; i < finallength ;i++){
+    		
+    		
+    	}
+    	
+    }
+	public static void main(String[] args) {
+		
+		int[] k = {2,6,7,9,1,0,1,2,3,6};
+		
+		MinMax0or1.printSubset(k);
+	}
+
+}

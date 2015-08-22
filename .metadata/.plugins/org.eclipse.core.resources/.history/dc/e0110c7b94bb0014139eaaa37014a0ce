@@ -1,0 +1,59 @@
+package com.hacker.japan;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class SquareTransaction {
+	
+	public List<Integer> transaction ;
+	public List<Integer> target;
+	
+	public SquareTransaction() {
+		
+		transaction = new ArrayList<Integer>();
+		target = new ArrayList<Integer>();
+	}
+	
+	public void printTarget(){
+		
+		for(Integer tar : target){
+			
+			Integer temp = tar;
+			for(int i=0;i < transaction.size();i++){
+				
+				temp = temp - transaction.get(i);
+				if(temp < 1){
+					
+					System.out.println(i+1);
+					break;
+				}
+			}
+			
+		}
+	}
+	
+	public static void main(String[] args) throws IOException {
+		
+		SquareTransaction st  = new SquareTransaction();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String line = br.readLine();
+		int N = Integer.parseInt(line);
+		
+		line = br.readLine();
+		String[] tocken = line.split(" ");
+		
+		for(String tock : tocken){
+			
+			st.target.add(Integer.parseInt(tock));
+		}
+		
+		
+		
+		
+		
+	}
+
+}

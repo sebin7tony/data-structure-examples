@@ -1,0 +1,15 @@
+
+import java.util.LinkedList;
+
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		System.out.println("Hello world");
+		LinkedList<String> ll = new LinkedList<String>();
+		ll.add("sebin");
+		System.out.println("LInked list contents "+ll);
+		
+	}
+
+}

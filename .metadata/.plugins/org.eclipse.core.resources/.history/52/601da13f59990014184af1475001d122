@@ -1,0 +1,11 @@
+package com.linkedlist.util;
+
+public class LinkedListUtil {
+	
+	public static void main(String[] args) {
+		
+		// Java is providing by default linkedList implementation
+		// Lets go through the details
+	}
+
+}

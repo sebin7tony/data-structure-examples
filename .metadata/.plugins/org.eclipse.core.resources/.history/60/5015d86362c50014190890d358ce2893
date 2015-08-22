@@ -1,0 +1,49 @@
+package com.java.array;
+
+public class LexicoGraphic {
+	
+	public boolean lexico(int num,StringBuilder value,int length,int target){
+		
+		if(num > length){
+			
+			return false;
+		}
+		
+		String tmp;
+		for(int i=0;i<9;i++){
+			
+			tmp = value.toString();
+			tmp = tmp+i;
+			if(Integer.parseInt(tmp.toString()) == target){
+				return false;;
+			}
+			System.out.println(tmp);
+			
+			
+		}
+		
+		for(int i =0;i<=9;i++){
+			
+			//lexico(num+1, value, length, target);
+		}
+		return false;
+	}
+	
+	public void finalLex(){
+		
+		
+		for(Integer i=1;i<=9;i++){
+			
+			System.out.println(i);
+			StringBuilder val = new StringBuilder();
+			val.append(i.toString());
+			lexico(1,val, 2, 25);
+		}
+	}
+	public static void main(String[] args) {
+		
+		LexicoGraphic lx = new LexicoGraphic();
+		lx.finalLex();
+	}
+
+}

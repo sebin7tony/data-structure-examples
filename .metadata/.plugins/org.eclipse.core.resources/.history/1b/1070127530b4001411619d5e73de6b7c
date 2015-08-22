@@ -1,0 +1,26 @@
+package com.ds.tree;
+
+public class Tree {
+	
+	private Node root;
+	
+	public void addNode(int value,Node run){
+		
+		if(root == null){
+			
+			Node temp = new Node();
+			temp.setValue(value);
+			root = temp;
+		}
+		if(value > run.getValue()){
+			
+			if(run.getRchild() == null){
+				
+				Node temp = new Node();
+				temp.setValue(value);
+				run.setRchild(temp);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.oop.abstrac;
+
+public abstract class AbstractTest {
+	
+	public static String foo(){
+        System.out.println("Test foo called");
+        return "";
+    }
+	
+	protected abstract void hell();
+     
+    public static void main(String args[]){
+        AbstractTest obj = null;
+        System.out.println(obj.foo());
+    }
+
+}
+
+class sebin extends AbstractTest{
+
+
+	
+	
+}
+
+ 

@@ -1,0 +1,11 @@
+package com.java.bitMan;
+
+public class PrintAllSubSets {
+	
+	public void printSubSets(int[] input){
+		
+		int len = input.length;
+		int currSubset = 2^len-1;
+	}
+
+}

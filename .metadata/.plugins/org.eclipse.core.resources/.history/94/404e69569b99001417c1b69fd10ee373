@@ -1,0 +1,145 @@
+package com.linkedlist.self;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LinkedListImpl {
+	
+	private Node head ;
+	
+	// Default constructor
+	public LinkedListImpl() {
+		
+		this.head = null;
+	}
+	
+	// Add method
+	public void add(E value){
+		
+		Node newNode = new Node();
+		newNode.setValue(value);
+		if(head == null){
+			
+			newNode.setNext(null);
+			head = newNode;
+		}
+		else{
+			Node runner = head;
+			while(runner.getNext() != null){
+				
+				runner = runner.getNext();
+			}
+			newNode.setNext(null);
+			runner.setNext(newNode);
+		}
+		
+	}
+	
+	//Add in specific position
+	//return true if successfully added to the given location
+	//return false if could not find the location
+	public Boolean add(int position,Integer value){
+		
+		int count = 0;
+		Node runner = head;
+		
+		// Position '0' has to be treated separately 
+		if(position == 0 ){
+			
+			if(runner == null){
+			
+				Node newNode = new Node();
+				newNode.setValue(value);
+				newNode.setNext(null);
+				head = newNode;
+				return true;
+			}
+			else{
+				
+				Node newNode = new Node();
+				newNode.setValue(value);
+				newNode.setNext(runner);
+				head = newNode;
+				return true;
+			}
+		}
+		
+		//Reaches here if position is not '0'
+		while(runner != null){
+			count++;
+			if(position == count){
+				
+				Node newNode = new Node();
+				newNode.setValue(value);
+				newNode.setNext(runner.getNext());
+				runner.setNext(newNode);
+				return true;
+			}
+			runner = runner.getNext();
+		}
+		// Index out of bound error. Position does not exist
+		return false;
+		
+	}
+	
+	//Function to remove a node from linkedlist
+	//returns the value of the removed node
+	//if it could not find then it returns '-1'
+	
+	public Integer remove(int position){
+		
+		Node runner = head;
+		int count = 0 ;
+		if(position == 0){
+			
+			head = runner.getNext();
+			runner.setNext(null);
+			return runner.getValue();
+		}
+		
+		while(runner != null){
+			count++;
+			if(count == position && runner.getNext() != null){
+				
+				Node tmp = runner.getNext();
+				runner.setNext(tmp.getNext());
+				tmp.setNext(null);
+				return tmp.getValue();
+			}
+			runner = runner.getNext();
+		}
+		//it could not find the position
+		return -1;
+		
+	}
+	
+	// toString method for printing the contents 
+	@Override
+	public String toString() {
+		
+		List<Integer> linkedList = new ArrayList<Integer>();
+		
+		Node runner = head;
+		while(runner != null){
+			
+			linkedList.add(runner.getValue());
+			runner = runner.getNext();
+		}
+		
+		int listLen = linkedList.size(),count = 0;
+		StringBuffer ll = new StringBuffer();
+		ll.append("[");
+		
+		for(Integer value : linkedList){
+			count++;
+			ll.append(Integer.toString(value));
+			if(count != listLen){
+				ll.append(",");
+			}
+		}
+		ll.append("]");
+		
+		return ll.toString();
+	}
+
+}
